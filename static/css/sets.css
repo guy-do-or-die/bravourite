@@ -1,0 +1,108 @@
+body {
+	overflow: hidden;
+}
+
+.sets {
+	height: 100%;
+	text-align: center;
+
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -moz-box;
+	display: flex;
+}
+
+.set {
+	position: relative;
+
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.set .video {
+	transition: all .3s;
+
+	position: absolute;
+	padding-bottom: 27vh;
+	padding-top: 30px;
+	margin-left: 1.5vw;
+	overflow: hidden;
+
+	width: 30vw;
+	height: 1vh;
+
+	box-shadow: 0px 0px 10px 0px #888888;
+}
+
+.set .video.loaded:hover {
+	border-bottom: 5px solid red;	
+}
+
+.set .video:active {
+	transition: none;
+}
+
+.set .video iframe {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.set .video iframe.obsolete {
+	opacity: .50;
+}
+
+.set.second {
+	margin-top: 25vh;
+}
+
+.set.first {
+	margin-top: 10vh;
+}
+
+.set.third {
+	margin-top: 35vh;
+}
+
+.details-area {
+	margin-top: 10vh;
+	text-align: center;
+}
+
+.details-area img {
+	transition: all 0.75s 0.25s;
+	cursor: pointer;
+	margin-top: 5vh;
+	width: 20vw;
+
+	vertical-align: middle;
+	border-radius: 50%;
+}
+
+@-webkit-keyframes rotating {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(3600deg);
+	}
+}
+
+.details-area img.rotating {
+	-webkit-animation: rotating 2s linear infinite;
+}
+
+.details-area img:hover {
+	opacity: .90;
+}
+
+.details {
+	padding-top: 10vh;
+}
