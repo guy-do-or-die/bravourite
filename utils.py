@@ -13,7 +13,7 @@ def extract_set_info(snippet):
     artist, *ctx = title.split(' Boiler Room ')
     thumb = snippet['thumbnails']['medium']['url']
     location = ' '.join((ctx or [''])[0].split()[:-2]).replace('x ', '') or ''
-    artist = artist.split(': ')[-1:][0].replace(' x', '')
+    artist = artist.split(': ')[-1:][0].replace(' x', '').rstrip(' – ')
     description = snippet['description']
     tags = snippet.get('tags')
     return locals()
