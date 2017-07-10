@@ -31,7 +31,7 @@ frontend:
 
 ```
 $ npm install
-$ NODE_ENV=production webpack -p
+$ NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p
 ```
 
 
