@@ -9,7 +9,7 @@ SETS = [
 
 SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search'
 INFO_URL = 'https://www.googleapis.com/youtube/v3/videos'
-YOUTUBE_KEY = 'AIzaSyB251-Zq8UrRsWoJ-qbXVbSX6qjKM5KjTM'
+YOUTUBE_KEY = 'AIzaSyC59vHEJaV5lsWoNn_MV7kjY0S6VqZR9C0'
 
 CHANNEL = 'UCGBpxWJr9FNOcFYA5GkKrMg',
 

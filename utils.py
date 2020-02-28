@@ -43,11 +43,16 @@ def videos_request(id):
     ))
 
     json = resp.json()
-    item = (json['items'] or [None])[0]
 
-    if item:
-        snippet = item['snippet']
-        return extract_set_info(snippet)
+    try:
+        item = (json['items'] or [None])[0]
+
+        if item:
+            snippet = item['snippet']
+            return extract_set_info(snippet)
+
+    except:
+        print(json)
 
     return {}
 
