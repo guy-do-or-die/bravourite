@@ -9,7 +9,8 @@ SETS = [
 
 SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search'
 INFO_URL = 'https://www.googleapis.com/youtube/v3/videos'
-YOUTUBE_KEY = 'AIzaSyCLYEHM4bNLf4Fbei9PnBKq1rR8Ed0TtuU'
+YOUTUBE_KEY = 'AIzaSyB251-Zq8UrRsWoJ-qbXVbSX6qjKM5KjTM'
+
 CHANNEL = 'UCGBpxWJr9FNOcFYA5GkKrMg',
 
 VK_URL = 'http://api.xn--41a.ws/api.php?method=by_owner'

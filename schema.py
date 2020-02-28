@@ -38,9 +38,7 @@ class Sets(ObjectType):
                 place=Argument(String, default_value='first'),
                 limit=Argument(Int, default_value=1))
 
-    def resolve_sets(self, args, *_):
-        place = args.get('place')
-        limit = args.get('limit')
+    def resolve_sets(self, _, place=0, limit=5):
 
         data = dict(
             first=lambda: [settings.THE_FIRST],
